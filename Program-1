@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std ;
+class Rectangle
+{
+public :
+    double length , breath;
+    Rectangle(){
+        length = 0;
+        breath = 0;
+    }
+    Rectangle(double Length, double Breath){
+        length = Length;
+        breath = Breath;
+    }
+    Rectangle(double num){
+        length = num;
+        breath = num;
+    }
+};
+
+int main(){
+    double length ,breath ,Area;
+    Rectangle rect;
+    length = rect.length;
+    breath = rect.breath;
+    Area = length*breath;
+    cout<<"Area with default Consructor : "<<Area<<"\n";
+    
+    Rectangle rectangle(10,5);
+    length = rectangle.length;
+    breath = rectangle.breath;
+    Area = length*breath;
+    cout<<"Area with Parametried Constructor : "<<Area<<"\n";
+
+    Rectangle Rect(5);
+    length = Rect.length;
+    breath = Rect.breath;
+    Area = length*breath;
+    cout<<"Area with One Parameter in Consructor : "<<Area<<"\n";
+}
